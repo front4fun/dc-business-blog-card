@@ -72,7 +72,7 @@ body {
 }
 .card-image::after {
   content: ' ';
-  background: url(/src/resources/white-overlay.svg) left bottom;
+  background: url(./../resources/white-overlay.svg) left bottom;
   position: absolute;
   left: 0;
   bottom: 0;
