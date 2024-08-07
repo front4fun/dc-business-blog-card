@@ -1,0 +1,139 @@
+body {
+  width: auto;
+  height: 100%;
+  background-color: #f2f5f9;
+  margin: auto;
+}
+
+/*
+ * font
+ */
+.lato {
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.fw-100 { font-weight: 100; }
+.fw-200 { font-weight: 200; }
+.fw-300 { font-weight: 300; }
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+.fw-800 { font-weight: 800; }
+.fs-16 { font-size: 1rem; }
+.fs-24 { font-size: 1.5rem; }
+
+/* 
+ * colors
+ */
+.c-soft-white { color: #f2f5f9; }
+.c-white { color: #fff; }
+.c-black { color: #111729; }
+.c-grey { color: #677489; }
+.bg-soft-white { background-color: #f2f5f9; }
+.bg-white { background-color: #fff; }
+.bg-black { background-color: #111729; }
+.bg-grey { background-color: #677489; }
+
+.radius-8 { border-radius: 8px; }
+.radius-16 { border-radius: 1rem; }
+
+.hidden { visibility: hidden; display: none; }
+.shadow { box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05); }
+
+/*
+ * card
+ */
+.card {
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  max-width: 418px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-image {
+  overflow: hidden;
+  width: 418px;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.card-image::after {
+  content: ' ';
+  background: url(/src/resources/white-overlay.svg) left bottom;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 68px;
+  background-size: contain;
+}
+.card-image .card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card .card-body {
+  padding: .5rem 2rem;
+}
+
+.card-body > .card-title,
+.card-body > .card-description {
+  margin-bottom: 1rem;
+}
+
+.card-body .card-title { 
+  line-height: 2rem;
+  letter-spacing: -0.1rem;
+}
+.card-body .card-description {
+  line-height: 1.5rem;
+  letter-spacing: -0.005rem;
+}
+
+.card .card-presenting {
+  border-top: 1px solid #f2f5f9;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  padding: 2rem;
+  column-gap: 1rem;
+}
+
+.card-presenting .avatar {
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 3px rgba(17, 23, 41, 0.05);
+}
+
+.avatar .avatar-img {
+  width: 32px;
+  height: 32px;
+}
+
+.role {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.role .role-name {
+  letter-spacing: -0.025rem;
+}
+.role .role-description {
+  font-size: .7rem;
+}
